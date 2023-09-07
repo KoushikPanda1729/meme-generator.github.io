@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    width: 2.5rem;
+    border-radius: 3rem;
+    margin: auto 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 1rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 92vh;
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+
+
+.container {
+    box-shadow: 0 0 4px gray;
+    max-height: 70vh;
+    width: 30vw;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    overflow: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container .memeContent {
+    padding: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.container img {
+    width: 90%;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    object-fit: cover;
+}
+
+.author {
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.btn {
+    margin: 1rem;
+    width: 14rem;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 4px gray;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
+    background-color: #23CAEB;
+}
+
+.btn:active {
+    background-color: green;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.allBtn {
+    display: flex;
+    padding: 2rem;
+}
+
+@media (max-width:830px) {
+    nav {
+        max-width: 100vw;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    nav ul li {
+        margin: 0.3rem;
+    }
+    nav img{
+        margin: 0.4rem 0.2rem;
+    }
+
+    .container {
+        box-shadow: 0 0 4px gray;
+        max-height: 90%;
+        height: 100%;
+        max-width: 88vw;
+        width: 100%;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        font-size: 1rem;
+        border-radius: 0.4rem;
+        overflow: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container img {
+        width: 75vw;
+        max-height: 19rem;
+        height: 100%;
+        padding: 0.6rem;
+        border-radius: 0.3rem;
+        object-fit: contain;
+    }
+
+
+
+    .allBtn {
+        display: flex;
+        padding: 0rem;
+        flex-direction: column;
+        height: 13rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        font-size: 0.7rem;
+        width: 8rem;
+        margin: 0.4rem auto;
+        padding: 0.7rem;
+    }
+}
